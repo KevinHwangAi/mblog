@@ -3,11 +3,11 @@ import os
 import sys
 
 if __name__ == "__main__":
-<<<<<<< HEAD
+#<<<<<<< HEAD
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mblog.settings")
-=======
+#=======
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myweb.settings")
->>>>>>> a2aee323837b70998089cfec46c5b1339258670a
+#>>>>>>> a2aee323837b70998089cfec46c5b1339258670a
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
