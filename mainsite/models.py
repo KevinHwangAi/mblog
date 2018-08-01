@@ -8,9 +8,10 @@ class Post(models.Model):
     pub_date = models.DateTimeField(default=timezone.now) #发文时间
 
     class Meta:
-        ordering = ('-pub_date',)
+        ordering = ('pub_date',) #('-pub_date',)文章按最新时间排序,('pub_date')为最早时间排序
 
-        def __unicode__(self):
-            return title
+    def __unicode__(self):
+
+        return self.title
 
 

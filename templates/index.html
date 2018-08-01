@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好有性格葛博客</title>
+</head>
+<body>
+    <h1>
+        欢迎黎我葛底盘
+    </h1>
+    <hr>
+    {% for post in posts %}
+
+        <p style="font-family: 微软正黑体;font-size:16pt;font-weight:bold;">
+            <a href="/post/{{ post.slug }}">{{post.title}}</a>
+
+        </p>
+
+{#        <p style="font-family: 微软正黑体;font-size:10pt;letter-spacing:1pt;">#}
+{#        {{ post.body }}#}
+{#        </p>#}
+    {% endfor %}
+    <hr>
+    <h3>
+        现在时间系:{{ now }}
+    </h3>
+</body>
+</html>
